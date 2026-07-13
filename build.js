@@ -1,17 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-// Importar el plugin compilado
-const plugin = require('./rncalation.js');
-
-// Crear objeto JSON con datos del plugin
 const pluginJson = {
-  id: plugin.default.id,
-  name: plugin.default.name,
-  icon: plugin.default.icon,
-  site: plugin.default.site,
-  version: plugin.default.version,
-  webStorageUtilized: plugin.default.webStorageUtilized,
+  id: "rncalation",
+  name: "RNCALATION",
+  icon: "src/spanish/rncalation/icon.png",
+  site: "https://rncalation.online",
+  version: "1.0.0",
+  webStorageUtilized: true
 };
 
 const target = path.join(__dirname, 'plugin.min.json');
