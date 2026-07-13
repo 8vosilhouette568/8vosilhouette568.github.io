@@ -1,5 +1,15 @@
+cat << 'EOF' > package.json
 {
+  "name": "plugins-compiler",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc rncalation.ts --outFile plugin.min.json --target es2020 --module commonjs"
+  },
   "dependencies": {
     "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
   }
 }
+EOF
