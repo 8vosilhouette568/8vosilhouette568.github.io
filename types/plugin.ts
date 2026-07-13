@@ -1,1 +1,1 @@
-export interface Plugin { [key: string]: any; }
+export const Plugin: any = {} as any;

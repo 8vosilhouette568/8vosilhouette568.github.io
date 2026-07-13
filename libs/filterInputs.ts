@@ -1,1 +1,1 @@
-export const Filters = {};
+export const Filters: any = {} as any;
